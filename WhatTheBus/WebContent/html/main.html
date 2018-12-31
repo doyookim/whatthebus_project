@@ -6,28 +6,20 @@
 <link type="text/css" rel="stylesheet" href="main.css" />
 </head>
 
-<style> 
+<body>
+<div id="page">
 
-</style>
-
-
-<header>
+<header id="header">
 <a><img src="main_logo.jpg" id="gogo"></a>
-
 </header>
 
 
+	
+	<div class="menubar">
 
-<body>
-
-	<table>
-	<tr>
-	<td>
-	<a href="main.html"> <img src="main_logo.jpg" id="logo"/></a>
-	</td>
-	<td>
-	<nav class="menubar">
+	
 		<ul>
+
 			<li><a href="#">소개</a>
 				<ul>
 					<li><a href="#">사이트소개</a></li>
@@ -62,32 +54,31 @@
 					<li><a href="#">이벤트</a></li>
 				</ul></li>
 		</ul>
-	</nav>
-	</td>
-	</tr>
-</table>
-<hr/><!-- 구분선 -->
+	
+	</div>
+	
+
 <!-- 여기까지 메뉴 -->
 
 
 <!-- 여기부터 로그인 -->
- <aside id="left">
+<aside id="left">
 	
-	<form>
-	<input type="text" name="name" placeholder="아이디"><br>
-	<input type="password" name="pass" placeholder="비밀번호">	<br>
-	<input type="button" value="로그인"><br/>
-	<input type="button" value="회원가입">
-	<input type="button" value="아이디찾기">
-	<input type="button" value="비밀번호 찾기">
-	</form>
-
-	</aside>	
+	<table>
+	<tr><td><input type="text" name="name" placeholder="아이디" id="id"></td></tr>
+	<tr><td><input type="password" name="pass" placeholder="비밀번호" id="pw">	</td></tr>
+	<tr><td><input type="button" value="로그인" id="login_bt"></td></tr>
+	<tr><td><input type="button" value="회원가입" id="join_bt">
+	<input type="button" value="아이디찾기" id="id_bt"><tr><td>
+	<tr><td><input type="button" value="비밀번호 찾기" id="pw_bt"><tr><td> 
+	</table>
+	
+</aside>	
 
 <!-- 여기까지 로그인 -->
 
 <aside id="right">
-<table>
+<table class="right_tab">
 <tr>
 <td>
 관심리스트(찜)
@@ -104,12 +95,18 @@
 <a href="#"><img src="ad.jpg"/></a>
 </td>
 </tr>
+<tr>
+<td>
+<a href="#"><img src="ad.jpg"/></a>
+</td>
+</tr>
 
 </table>
 </aside>
 
 
 <!-- 화면 센터 -->
+	<br>
 
 	 <section id="main">
 		<!-- 지역별조회 -->
@@ -139,7 +136,7 @@
         
         <label for="gugun">구/군</label>
         <select name="gugun">
-        <option value="#">#</option>
+        <option value="#">서초구</option>
         <option value="#">#</option>
         <option value="#">#</option>
         </select>
@@ -147,7 +144,7 @@
         
         <label for="dong">동/읍/면/리</label>
         <select name="dong">
-        <option value="#">#</option>
+        <option value="#">방배동</option>
         <option value="#">#</option>
         <option value="#">#</option>
         </select>
@@ -155,9 +152,9 @@
         <input type="text" name="juso" placeholder="나머지 주소 입력"><input type="submit" value="검색">       
         </div>	
         
-        <!-- 선물, 마감임박, 제안 -->
+        <!-- 설문, 마감임박, 제안 -->
         <div>
-        <table>
+        <table class="main_tab">
         <tr>
         <td>hot설문
         <ul>
@@ -193,5 +190,7 @@
 
 
 
+</div> <!-- page -->
 </body>
+
 </html>
