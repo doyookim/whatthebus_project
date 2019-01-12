@@ -1,0 +1,482 @@
+@charset "UTF-8";
+
+
+body {	
+	border-collapse: collapse;
+}
+td{
+	 height:40px;
+}
+
+#welcome{
+	color : #abdcf1250145145;
+	font-size : 20pt;
+	font-family : '휴먼매직체';
+	
+}
+.insertbt{
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	height : 40px;
+	border: none;
+}
+#searchbt{
+	background-color: rgb(49, 100, 176);
+	color: white;
+	border: none;
+	height:30px;
+}
+#insertcheckbt{
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	border: none;
+	height:30px;
+}
+#emailcheckbt{
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	border: none;
+	height:30px;
+}
+
+#page{
+	padding: 5px;
+	width: 1024px;
+	margin: 20px auto;
+}
+
+	
+
+#gogo:hover{
+  animation: ;
+  animation-iteration-count: infinite;
+  position: relative;
+  -webkit-animation: mymove 7s ; /* Safari 4.0 - 8.0 */
+  animation: shake 0.5s, mymove 7s ;
+
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 750px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 750px;}
+}
+
+
+
+.menubar {
+	
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+.menubar ul {
+	background: rgb(22, 72, 151);
+	height: 50px;
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+}
+
+.menubar li {
+	float: left;
+	margin-left: 10px;
+	padding: 0px;
+}
+
+.menubar li a {
+	background: rgb(22, 72, 151);
+	color: #cccccc;
+	display: block;
+	font-weight: normal;
+	line-height: 50px;
+	margin: 0px 20px;
+	padding: 0px 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a {
+	background: rgb(49, 100, 176);
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menubar li ul {
+	background: rgb(49, 100, 176);
+	display: none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+	height: auto;
+	padding: 0px;
+	margin: 0px 20px; /*내려오는 메뉴 마진*/
+	border: 0px;
+	position: absolute;
+	width: 200px;
+	z-index: 200;
+	/*top:1em;
+/*left:0;*/
+}
+
+.menubar li:hover ul {
+	display: block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+	background: rgb(49, 100, 176);
+	display: block;
+	float: none;
+	margin: 0px;
+	padding: 0px;
+	width: 200px;
+}
+
+.menubar li:hover li a {
+	background: none;
+}
+
+.menubar li ul a {
+	display: block;
+	height: 50px;
+	font-size: 12px;
+	font-style: normal;
+	margin: 0px;
+	padding: 0px 10px 0px 15px;
+	text-align: left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a {
+	background: rgb(22, 72, 151);
+	border: 0px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.menubar p {
+	clear: left;
+}
+
+/* 여기까지 메뉴 */
+
+/* 여기부터 로그인 */
+aside#center {
+	
+	width: 800px;
+	margin-left:100px;
+	margin-top: 20px;
+	margin-bottom:20px;
+	float: left;
+}
+
+
+
+#id{
+	 font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	width: 470px;
+	height: 40px;
+}
+
+#pw{
+	 font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	width: 470px;
+	height: 40px;
+}
+
+#login_bt{
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+  width:500px;
+  height:50px;
+  background-color: #3465b0;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+   font-size:20pt;
+  margin-top: 15px ;
+  cursor: pointer;	
+}
+
+
+/*
+#join_bt{
+	
+font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+  width:300px;
+  background-color: #3465b0;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px;
+  cursor: pointer;
+}회원가입버튼 임시제거*/
+
+#id_bt{
+	
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+  width:246px;
+  height:40px;
+  background-color: #3465b0;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:15pt;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#pw_bt{
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+  width:246px;
+  height:40px;
+  background-color: #3465b0;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:15pt;
+  margin-top: 15px;
+  margin-left: -246px;
+  cursor: pointer;
+	
+}
+
+
+/* 여기까지 로그인 */
+
+/* 메인섹션 */
+#main {
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	font-size: 16px;	
+	text-align: center;
+	/*border-style: solid; */
+	
+}
+
+#main_check {
+	margin-bottom: 10px;
+	
+	
+}
+
+.main_tab td{
+	color: white;
+	border: solid;
+	border-color: white;
+	background-color: #3465b0;
+	
+}
+
+
+/* 메인섹션여기까지 */
+
+aside#right {
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
+		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
+		sans-serif;
+	font-size: 16px;	
+	text-align: center;
+	color: white;
+	width: 185px;
+	margin-top: 20px;
+	
+	float: right;
+}
+
+.right_tab td{
+	border: solid;
+	border-color: white;
+	
+	background-color: #3465b0;
+}
+
+
+/*
+여기서부터 라이언 코드
+*/
+
+form#ryanform{
+    width: 500px;
+    padding: 60px 25px 80px;
+    margin:  auto;
+    background: #f8d348;
+    display: flex;
+    flex-direction: column;
+    font-size:15pt;
+}
+
+svg {
+    width: 70%;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 40px;
+    align-self: center;
+    transform-style: preserve-3d;
+}
+
+input {
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+@keyframes lookaway-up {
+    from {
+        transform: rotate3d(.2, 0, -.01, 20deg);
+    }
+
+    to {
+        transform: rotate3d(.2, -.05, -.01, 20deg);
+    }
+}
+
+@keyframes lookaway-down {
+    0% {
+        transform: rotate3d(-.2, 0, -.01, 20deg);
+    }
+
+    100% {
+        transform: rotate3d(-.2, -.05, .01, 20deg);
+    }
+}
+
+.ears {
+    transform-origin: 50% 50% 5px;
+}
+
+.eyes {
+    transform-origin: 50% 50% -40px;
+}
+
+.muzzle {
+    transform-origin: 50% 50% -44px;
+}
+
+.ears, .eyes, .muzzle {
+    transition: transform .5s;
+}
+
+.focused {
+    transition: transform .1s;
+}
+
+.look-away .ears,
+.look-away .eyes,
+.look-away .muzzle {
+    transition-duration: .3s;
+    animation: 3s infinite alternate;
+}
+
+.look-away.up .ears,
+.look-away.up .eyes,
+.look-away.up .muzzle {
+    transform: rotate3d(.2, 0, 0, 20deg) !important;
+}
+
+.look-away.down .ears,
+.look-away.down .eyes,
+.look-away.down .muzzle {
+    transform: rotate3d(-.2, 0, 0, 20deg) !important;    
+}
+
+.look-away.playing.up .ears,
+.look-away.playing.up .eyes,
+.look-away.playing.up .muzzle {
+    animation-name: lookaway-up;
+}
+
+.look-away.playing.down .ears,
+.look-away.playing.down .eyes,
+.look-away.playing.down .muzzle {
+    animation-name: lookaway-down;
+}/*여기까지 라이언*/
+/*여기서부터 아이디찾기*/
+#idsearch{
+  text-ailgn:left;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.idsearchtext{
+	border: 2px solid rgb(49, 100, 176);
+	height:10px;
+}
+#idsearchnextbt{
+ background-color: #3465b0;
+  color: white;	
+}
+#idcheck{
+  margin-top:20px;
+text-align:center;
+margin-bottom:20px;
+
+}
+#idcheckbt{
+	background-color:rgb(49, 100, 176);
+	color:white;
+}
+
+/*여기까지 아이디찾기*/
+/*여기부터 푸터*/
+#footertable{
+	width:1024px;
+	background-color:rgb(49, 100, 176);
+	text-align:center;
+}
+.mainbt{
+	margin-bottom:20px;	
+	  font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+/*여기까지 푸터*/

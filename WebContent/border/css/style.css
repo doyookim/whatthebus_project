@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+	border-collapse: collapse;
+}
+
+.writebt {
+	background-color:  rgb(49, 100, 176);
+	border-radius: 25px;
+	height: 30px;
+}
+
+#writebt {
+	width: 70px;
+	height: 35px;
+	background-image: url("../images/writebt.PNG");
+	background-repeat: no-repeat;
+	background-size: 70px 30px;
+}
+
+#searchbt {
+	width: 70px;
+	height: 30px;
+	background-image: url("../images/searchbt.PNG");
+	background-repeat: no-repeat;
+	
+	background-size: 70px 30px;
+}
+
+#boardhead {
+	background-color: rgb(133, 221, 243);
+}
+
+#content {
+	width: 500px;
+}
+
+.contenttd {
+	align: "center";
+	width: 70px;
+}
+
+#likebutton {
+	width: 70px;
+	height:30px;
+	text-align: right;
+	background-image: url("../images/likebutton.PNG");
+	background-repeat: no-repeat;
+	background-size: 30px 20px;
+	background-position: left;
+	background-color: white;
+}
+
+.contentbt {
+	border-radius: 10px;
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	height : 40px;
+	border: none;
+}
