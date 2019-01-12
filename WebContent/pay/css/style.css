@@ -197,7 +197,6 @@ td{
 
 /* 여기까지 메뉴 */
 
-
 /* 메인섹션 */
 #main {
 	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
@@ -247,35 +246,6 @@ aside#right {
 }
 
 
-
-
-
-/*여기서부터 아이디찾기*/
-#idsearch{
-  text-ailgn:left;
-  margin-top:30px;
-  margin-bottom:30px;
-}
-.idsearchtext{
-	border: 2px solid rgb(49, 100, 176);
-	height:10px;
-}
-#idsearchnextbt{
- background-color: #3465b0;
-  color: white;	
-}
-#idcheck{
-  margin-top:20px;
-text-align:center;
-margin-bottom:20px;
-
-}
-#idcheckbt{
-	background-color:rgb(49, 100, 176);
-	color:white;
-}
-
-/*여기까지 아이디찾기*/
 /*여기부터 푸터*/
 #footertable{
 	width:1024px;
@@ -292,3 +262,14 @@ margin-bottom:20px;
     margin-top: 15px;
 }
 /*여기까지 푸터*/
+
+#agree{
+	font-size:8px;	
+}
+#paybt{
+	width:250px;
+	height:70px;
+	background-color:#ff8080;
+	border-radius: 5px;
+	border:none;
+}
