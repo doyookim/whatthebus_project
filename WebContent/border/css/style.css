@@ -2,7 +2,21 @@
 
 body {
 	border-collapse: collapse;
+	font-family:'맑은 고딕';
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
 
 .writebt {
 	background-color:  rgb(49, 100, 176);
@@ -21,10 +35,10 @@ body {
 #searchbt {
 	width: 70px;
 	height: 30px;
-	background-image: url("../images/searchbt.PNG");
+	background-image: url("../images/searchbutton.png");
 	background-repeat: no-repeat;
-	
 	background-size: 70px 30px;
+	cursor: pointer;
 }
 
 #boardhead {
@@ -57,4 +71,11 @@ body {
 	color: white;
 	height : 40px;
 	border: none;
+}
+
+#footertable{
+	color: white;
+}
+#termsbt{
+	color:white;
 }
