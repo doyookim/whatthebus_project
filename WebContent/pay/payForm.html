@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>결제 화면</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+		<!-- 화면 센터 -->
+		<table align="center">
+			<td>
+				<div>
+					<table>
+						<tr>
+							<td><h1>버스 경로정보</h1></td>
+						<tr>
+							<td align="left">노선명</td>
+							<td>
+								<!-- ex)서울~인천 -->서울~인천
+							</td>
+						</tr>
+						<tr>
+							<td>지도정보</td>
+							<td>
+								<!-- 기사님이 올린 해당버스 지도(경로) 디비에서 불러오기 -->해당 버스 지도
+							</td>
+						</tr>
+
+						<tr>
+							<td><h1>신청 정보</h1></td>
+						</tr>
+						<tr>
+							<td>신청인 &nbsp;</td>
+							<td>
+								<!-- 디비에서 받아올 세션(이사람의이름), 연락처 -->류종학
+							</td>
+						</tr>
+						<tr>
+							<td>탑승지 &nbsp;</td>
+							<td>
+								<!-- 지도에서 선택한 값 받아와서 입력 --> 서울역2번출구
+							</td>
+						</tr>
+						<tr>
+							<td>탑승자 &nbsp;</td>
+							<td><input type="text" border="solid"></td>
+						</tr>
+						<tr>
+							<td>연락처 &nbsp;</td>
+							<td align="left"><select name="phone1">
+									<option value="02">02</option>
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="016">016</option>
+									<option value="017">017</option>
+									<option value="018">018</option>
+									<option value="019">019</option>
+							</select>- <input type="text" name="phone2" border="solid" size="5"
+								value="" /> - <input type="text" name="phone3" border="solid"
+								size="5" value="" /> <br /> <font color="red"></font></td>
+						</tr>
+
+
+						<tr>
+							<td><h1>결제정보</h1></td>
+						</tr>
+						<tr>
+							<td>결제수단</td>
+
+							<td>
+								<table>
+									<tr>
+										<td><input type="button" value="신용카드"></td>
+										<td><input type="button" value="카카오페이"></td>
+										<td><input type="button" value="휴대폰결제"></td>
+									</tr>
+									<!-- 추가 결제수단 -->
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><h2>신청동의</h2></td>
+						</tr>
+						<tr>
+							<td colspan="3"><input type="checkbox"> 이용권 구매 및
+								결제대행서비스에 이용약관 등에 모두 동의합니다.</td>
+						</tr>
+						<tr>
+							<td id="agree">
+								<li>구매조건 확인 및 결제 진행 동의</li>
+								<li>개인정보 수집 이용 및 제 3자 정보 제공 동의</li>
+								<li>결제대행서비스 이용약관 동의</li>
+							</td>
+					</table>
+				</div>
+			</td>
+			<td>
+				<div align="right">
+					<table>
+
+						<tr>
+							<td><h1>결제 금액</h1></td>
+						</tr>
+						<tr>
+							<td>이용금액&nbsp;</td>
+							<td align="left"><strong> <!--DB에서 받아와야할 값  --> 0
+							</strong>원</td>
+						</tr>
+						<tr>
+							<td>포인트 사용</td>
+							<td>(-)<strong>0</strong>P
+							</td>
+						</tr>
+						<tr>
+							<td><h3>최종 결제금액</h3></td>
+						</tr>
+						<tr>
+							<td align="right" colspan="2"><strong> <!-- 최종가격 -->0원
+							</strong></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="button" id="paybt" value="결제하기"></td>
+						</tr>
+
+
+					</table>
+
+				</div>
+			</td>
+		</table>
+
+
+
+		<!-- 화면센터 -->
+	
+</body>
+</html>
