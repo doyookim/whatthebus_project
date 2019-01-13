@@ -8,6 +8,7 @@ td{
 	 height:40px;
 }
 
+
 /*
 여기는 메인의 서브메뉴
 */
@@ -108,6 +109,7 @@ td{
 		sans-serif;
 	font-size: 14px;
 	font-weight: bold;
+	width: 1024px;
 	
 }
 
@@ -291,4 +293,15 @@ margin-bottom:20px;
     padding: 10px 15px;
     margin-top: 15px;
 }
+
+#mail{
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  background-color:rgb(49, 100, 176);
+
+}
+
 /*여기까지 푸터*/
