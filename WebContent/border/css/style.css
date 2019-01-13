@@ -15,7 +15,8 @@ body {
 	height: 35px;
 	background-image: url("../images/writebt.PNG");
 	background-repeat: no-repeat;
-	background-size: 70px 30px;
+	background-size: 71px 37px;
+	border-radius: 5px;
 }
 
 #searchbt {
@@ -23,16 +24,16 @@ body {
 	height: 30px;
 	background-image: url("../images/searchbt.PNG");
 	background-repeat: no-repeat;
-	
 	background-size: 70px 30px;
 }
 
 #boardhead {
-	background-color: rgb(133, 221, 243);
+	background-color: rgb(49, 100, 176);
 }
 
 #content {
 	width: 500px;
+	margin-top:50px;
 }
 
 .contenttd {
@@ -44,6 +45,7 @@ body {
 	width: 70px;
 	height:30px;
 	text-align: right;
+	border-radius: 10px;
 	background-image: url("../images/likebutton.PNG");
 	background-repeat: no-repeat;
 	background-size: 30px 20px;
@@ -57,4 +59,8 @@ body {
 	color: white;
 	height : 40px;
 	border: none;
+}
+#list{
+	margin-top:30px;
+	
 }

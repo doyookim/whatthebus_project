@@ -377,7 +377,7 @@ font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
   font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
 		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
 		sans-serif;
-  width:246px;
+  width:240px;
   height:40px;
   background-color: #3465b0;
   border: none;
@@ -392,6 +392,13 @@ font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
   cursor: pointer;
 	
 }
-
-
+#kakaologinbt{
+	margin-top:15px;
+	
+}
+.naverLogin{
+	margin-top:15px;
+	margin-left: -242px;
+	width:250px;
+}
 /* 여기까지 로그인 */
