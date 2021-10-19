@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이디 찾기</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<style type="text/css">
+
+/* The container */
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+
+
+</head>
+<body>
+	<div id="page">
+
+
+		<label class="container">등록한 휴대폰으로 인증 <input type="radio"
+			checked="checked" name="radio"> <span class="checkmark"></span></label> 
+			
+				
+		
+		<label class="container">등록한 휴대폰으로 인증 <input type="radio" name="radio">
+			<span class="checkmark"></span></label> 
+			
+			
+			
+			
+			<label class="container">Three <input type="radio"
+			name="radio"> <span class="checkmark"></span>
+		</label> <label class="container">Four <input type="radio"
+			name="radio"> <span class="checkmark"></span>
+		</label>
+
+
+
+		<!-- 화면 센터 -->
+		<div align="center">
+			<table id="idsearch">
+				<tr>
+					<td><input type="radio" class="radio" name="check"
+						value="phone">등록한 휴대폰으로 인증</td>
+				</tr>
+				<tr>
+					<td align="right">이름 : <input type="text" class="idsearchtext"></td>
+				<tr>
+					<td align="right">휴대폰 번호 : <input type="text"
+						class="idsearchtext">
+					</td>
+				</tr>
+
+				<tr>
+					<td><input type="radio" class="radio" name="check"
+						value="email">등록한 이메일로 인증</td>
+				</tr>
+				<tr>
+					<td align="right">가입시 등록한 이메일 : <input type="email"
+						class="idsearchtext"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align="right"><input type="submit" value="다음"
+						id="idsearchnextbt"></td>
+				</tr>
+			</table>
+
+
+			<!-- 화면센터 -->
+
+		</div>
+	</div>
+
+
+</body>
+</html>

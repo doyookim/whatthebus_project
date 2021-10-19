@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글내용 보기</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+		<form>
+			<table id="content" border="1"  align="center">
+				<tr>
+					<td class="contenttd">글번호</td>
+					<td>
+						<!-- 디비에서 받아올 글번호 -->
+					</td>
+					<td class="contenttd">조회수</td>
+					<td>
+						<!-- 디비에서 받아올 조회수 -->
+					</td>
+				</tr>
+				<tr>
+					<td class="contenttd">글쓴이</td>
+					<td>
+						<!-- 디비에서 받아올 글쓴이 -->
+					</td>
+					<td class="contenttd">작성일</td>
+					<td>
+						<!-- 디비에서 받아올 작성일 -->
+					</td>
+				</tr>
+				<tr>
+					<td class="contenttd" width="60">글 제목</td>
+					<td colspan="3">
+						<!-- 디비에서 받아올 글제목 -->
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="70" colspan="4">글내용</td>
+					<!-- 디비에서 받아올 글내용 -->
+				</tr>
+			</table>
+			<table width="500" align="center">
+				<tr>
+					<td align="center"><input type="button" id="likebutton"
+						value="1">
+					<!-- 벨류에 추천1 늘때마다 숫자 늘어나는 코드 넣어주기 --> <input type="button"
+						class="contentbt" value="답글"> <input type="button"
+						class="contentbt" value="수정">
+					<!-- 글쓴이만 이 버튼이 보이도록 코드 수정 --> <input type="button"
+						class="contentbt" value="목록"></td>
+				</tr>
+			</table>
+		</form>
+		<!-- 화면센터 -->
+
+</body>
+</html>

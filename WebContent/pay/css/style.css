@@ -1,8 +1,65 @@
 @charset "UTF-8";
 
+
+body {	
+	border-collapse: collapse;
+}
+td{
+	 height:40px;
+}
+
+/*
+여기는 메인의 서브메뉴
+*/
+.mainSubTitle{
+	width:150px;
+	height:20px;
+	padding:20px;
+	font-family:'맑은 고딕';
+}
+.mainSubValue{
+	width:150px;
+	height:150px;
+	padding:20px;
+}
+
+/*
+여기까지 메인의 서브메뉴
+*/
+#welcome{
+	color : #abdcf1250145145;
+	font-size : 20pt;
+	font-family : '휴먼매직체';
+	
+}
+.insertbt{
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	height : 40px;
+	border: none;
+}
+#searchbt{
+	background-color: rgb(49, 100, 176);
+	color: white;
+	border: none;
+	height:30px;
+}
+#insertcheckbt{
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	border: none;
+	height:30px;
+}
+#emailcheckbt{
+	background-color:  rgb(49, 100, 176);
+	color: white;
+	border: none;
+	height:30px;
+}
+
 #page{
 	padding: 5px;
-	width: 960px;
+	width: 1024px;
 	margin: 20px auto;
 }
 
@@ -140,112 +197,13 @@
 
 /* 여기까지 메뉴 */
 
-/* 여기부터 로그인 */
-aside#left {
-	width: 185px;
-	margin-top: 20px;
-	float: left;
-}
-
-
-
-#id{
-	 font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
-		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
-		sans-serif;
-	width: 160px;
-	height: 20px;
-}
-
-#pw{
-	 font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
-		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
-		sans-serif;
-	width: 160px;
-	height: 20px;
-}
-
-#login_bt{
-  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
-		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
-		sans-serif;
-  width:163px;
-  background-color: #3465b0;
-  border: none;
-  color: white;
-  padding: 3px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 0px 0px;
-  cursor: pointer;	
-}
-
-#id_bt{
-	
-  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
-		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
-		sans-serif;
-  width:78px;
-  background-color: #3465b0;
-  border: none;
-  color: white;
-  padding: 3px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0px 0px;
-  cursor: pointer;
-}
-
-#join_bt{
-	
-font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
-		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
-		sans-serif;
-  width:78px;
-  background-color: #3465b0;
-  border: none;
-  color: white;
-  padding: 3px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 0px 0px;
-  cursor: pointer;
-}
-
-#pw_bt{
-  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
-		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
-		sans-serif;
-  width:163px;
-  background-color: #3465b0;
-  border: none;
-  color: white;
-  padding: 3px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 0px 0px;
-  cursor: pointer;
-	
-}
-
-
-/* 여기까지 로그인 */
-
 /* 메인섹션 */
 #main {
 	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans",
 		"Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica,
 		sans-serif;
 	font-size: 16px;	
-	text-align: center;s
+	text-align: center;
 	/*border-style: solid; */
 	
 }
@@ -276,12 +234,42 @@ aside#right {
 	color: white;
 	width: 185px;
 	margin-top: 20px;
+	
 	float: right;
 }
 
 .right_tab td{
 	border: solid;
 	border-color: white;
+	
 	background-color: #3465b0;
 }
+
+
+/*여기부터 푸터*/
+#footertable{
+	width:1024px;
+	background-color:rgb(49, 100, 176);
+	text-align:center;
+}
+.mainbt{
+	margin-bottom:20px;	
+	  font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+/*여기까지 푸터*/
+
+#agree{
+	font-size:8px;	
+}
+#paybt{
+	width:250px;
+	height:70px;
+	background-color:#ff8080;
+	border-radius: 5px;
+	border:none;
 }
